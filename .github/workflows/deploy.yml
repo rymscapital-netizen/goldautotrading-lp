@@ -1,0 +1,73 @@
+name: Deploy Gold Auto Trading LP to Xserver
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate deploy files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          test -d assets
+          find index.html style.css script.js assets -maxdepth 4 -type f -print
+
+      - name: Prepare deploy package
+        run: |
+          mkdir -p deploy-package
+          cp index.html deploy-package/index.html
+          cp style.css deploy-package/style.css
+          cp script.js deploy-package/script.js
+          cp -R assets deploy-package/assets
+          echo "Deploy package contents:"
+          find deploy-package -type f -print
+
+      - name: Validate FTP secrets
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          test -n "$FTP_USERNAME"
+          test -n "$FTP_PASSWORD"
+          if [ "$FTP_USERNAME" = "sououestate" ]; then
+            echo "::error::Do not use the main FTP account. Create a restricted FTP account whose access directory is public_html/goldautotrading, then save it as FTP_USERNAME."
+            exit 1
+          fi
+          echo "FTP username and password secrets are set. Values are masked by GitHub."
+
+      - name: Deploy static site by FTP
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+
+          FTP_HOST="${FTP_SERVER:-sv16557.xserver.jp}"
+
+          echo "Uploading only deploy-package contents to restricted FTP account root."
+          echo "The restricted FTP account root must be: /home/sououestate/souou-estate.com/public_html/goldautotrading"
+          find deploy-package -type f -print
+
+          while IFS= read -r file; do
+            remote_path="${file#deploy-package/}"
+            remote_url="ftp://${FTP_HOST}/${remote_path}"
+            echo "Uploading ${remote_path}"
+            curl --fail --show-error --silent \
+              --ftp-create-dirs \
+              --user "${FTP_USERNAME}:${FTP_PASSWORD}" \
+              --upload-file "${file}" \
+              "${remote_url}"
+          done < <(find deploy-package -type f)

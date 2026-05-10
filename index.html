@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>不動産投資家向け余剰資金運用｜実運用公開中</title>
+  <meta name="description" content="不動産投資家向けに、実際に運用しているゴールド自動売買の実績を公開。余剰資金運用・DD管理・月次実績をオープンチャットで共有しています。">
+  <meta property="og:title" content="不動産投資家向け余剰資金運用｜実運用公開中">
+  <meta property="og:description" content="不動産投資家向けに、実際に運用しているゴールド自動売買の実績を公開。余剰資金運用・DD管理・月次実績をオープンチャットで共有しています。">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+  ================================================
+  画像ファイル名の対応表
+  assets/images/ 以下に格納してください
+
+  return-bar.png        → 2026年4月 +11.52% 月次リターンバーチャート
+  vantage-main.png      → Vantage Trading メイン画面（3ヶ月47.24%）
+  vantage-stats.png     → Vantage Trading 統計画面（勝率76.65%・取引861回）
+  monthly-table-1x.png  → 月次実績一覧表（通常口座）
+  monthly-table-2x.png  → 月次実績一覧表（2倍口座）
+  equity-report-1.png   → 運用推移グラフ1（MT5レポート）
+  equity-report-2.png   → 運用推移グラフ2
+  equity-report-3.png   → 運用推移グラフ3
+  equity-report-4.png   → 運用推移グラフ4
+  ================================================
+  -->
+
+  <!-- 追従CTA（スマホ） -->
+  <div class="sticky-bar" id="stickyBar">
+    <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="sticky-bar__btn">実運用を見る　→</a>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <p class="header__logo">
+          <span class="logo-mark">◆</span> Gold Auto Trading
+        </p>
+        <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="header__cta">オプチャ参加</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       1. ファーストビュー
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- テキスト -->
+        <div class="hero__text">
+          <div class="hero__tag">不動産投資家向け　余剰資金運用</div>
+          <h1 class="hero__title">
+            余剰資金を、<br>
+            どう動かすか。<br>
+            <span class="accent-gold">実運用を、公開します。</span>
+          </h1>
+          <p class="hero__sub">
+            不動産だけに資金を固定せず、余剰資金の一部をどう活かすか。<br class="br-pc">
+            実際に稼働しているゴールド自動売買の実績を、<br class="br-pc">
+            オープンチャットで継続的に共有しています。
+          </p>
+          <div class="hero__badges">
+            <span class="badge badge--green">実運用中</span>
+            <span class="badge badge--outline">リスク 3 / 10</span>
+            <span class="badge badge--outline">コピー数 115名</span>
+          </div>
+          <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+            実運用をオープンチャットで見る →
+          </a>
+          <p class="hero__note">※ 販売・勧誘はありません。実運用共有コミュニティです。</p>
+        </div>
+
+        <!-- 画像 -->
+        <div class="hero__media">
+          <div class="image-frame">
+            <!--
+              return-bar.png
+              2026年4月 +11.52% の月次リターンバーチャート
+            -->
+            <img
+              src="assets/images/return-bar.png"
+              alt="2026年4月 月次リターン +11.52% 実運用実績チャート"
+              loading="eager"
+            >
+          </div>
+          <div class="hero__float-card">
+            <span class="float-card__label">2026年4月 月次リターン</span>
+            <span class="float-card__value">+11.52%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-bar__inner">
+        <div class="trust-item">
+          <span class="trust-num" data-count="47.24" data-suffix="%">47.24%</span>
+          <span class="trust-label">3ヶ月リターン</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num" data-count="76.65" data-suffix="%">76.65%</span>
+          <span class="trust-label">総合勝率</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num" data-count="2.97" data-suffix="">2.97</span>
+          <span class="trust-label">PF</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num" data-count="3.11" data-suffix="%">3.11%</span>
+          <span class="trust-label">最大DD</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num" data-count="861" data-suffix="" data-int="true">861</span>
+          <span class="trust-label">総取引数</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       2. 共感セクション
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section empathy" id="empathy">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">Background</div>
+        <h2 class="section__title">
+          不動産投資を始めた理由は、<br>
+          収入を増やしたかったから<br>
+          ではありませんか？
+        </h2>
+      </div>
+
+      <div class="empathy__body">
+        <p class="text-lead">
+          収益物件を持ち、安定したキャッシュフローを得ながら資産を拡大する。<br class="br-pc">
+          それは多くの投資家が描く、堅実な未来設計の王道です。
+        </p>
+        <p class="text-lead">
+          しかし今、こんな状況に直面していませんか？
+        </p>
+
+        <ul class="check-list">
+          <li>物件価格が高騰し、次の物件をなかなか買えない</li>
+          <li>融資が厳格化され、現金待機期間が以前より長くなっている</li>
+          <li>手元に資金はあるのに、動かせないまま眠らせている</li>
+          <li>銀行の利息は雀の涙。インフレに対して無防備な気がする</li>
+        </ul>
+
+        <div class="empathy__message fade-in">
+          <p>
+            不動産投資は<strong>目的ではなく、手段</strong>のはずです。<br>
+            その延長線上で、余剰資金の置き場所をどう設計するか。
+          </p>
+          <p>
+            私は不動産投資家として同じ課題を持ちながら、<br>
+            余剰資金の一部をゴールド自動売買に充てて研究を続けています。<br>
+            その実運用データをオープンチャットで継続的に共有しています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       3. 実運用結果
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section results" id="results">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag">Real Performance</div>
+        <h2 class="section__title">実際の運用結果</h2>
+        <p class="section__sub">すべて実際の口座で稼働中の数値です</p>
+      </div>
+
+      <!-- スタッツカード群 -->
+      <div class="stats-grid">
+        <div class="stat-card stat-card--dark fade-in">
+          <span class="stat-card__label">2026年4月 月次リターン</span>
+          <span class="stat-card__num stat-card__num--xl">+11.52%</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>月利10%超は年換算で約138%相当。株式・不動産の平均年利をわずか1ヶ月で達成する水準です。</span>
+        </div>
+        <div class="stat-card stat-card--dark fade-in">
+          <span class="stat-card__label">3ヶ月累積リターン</span>
+          <span class="stat-card__num stat-card__num--xl">+47.24%</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>リスク3という低設定で3ヶ月約50%成長を達成。リスク対リターン比率が非常に優れています。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">リスクレベル</span>
+          <span class="stat-card__num">3<small> / 10</small></span>
+          <span class="stat-card__note">低リスク設定</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>1〜10中の3は安全圏。高リターンを維持しながら低リスクを両立できている点が評価のポイントです。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">コピートレーダー数</span>
+          <span class="stat-card__num">115<small> 名</small></span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>100名超のコピーは市場参加者による実質的な信任。実績に納得した投資家が選んだ証です。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">総合勝率</span>
+          <span class="stat-card__num">76.65%</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>FX自動売買の平均勝率は50〜60%台。76%超は上位水準であり、エントリー精度の高さを示しています。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">総取引数</span>
+          <span class="stat-card__num">861<small> 回</small></span>
+          <span class="stat-card__note">取引開始: 2025年4月〜</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>800回超の取引は統計的に十分なサンプル数。偶然性の排除された信頼できる数値です。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">プロフィットファクター</span>
+          <span class="stat-card__num">2.97</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>PF2.0超が優良の目安、3.0近辺は高品質の証。損失1円に対して利益約3円を生んでいる計算です。</span>
+        </div>
+        <div class="stat-card fade-in">
+          <span class="stat-card__label">最大ドローダウン</span>
+          <span class="stat-card__num stat-card__num--dd">3.11%</span>
+          <span class="stat-card__note">低DD管理で安定稼働</span>
+          <span class="stat-card__ai"><span class="ai-badge">AI評価</span>最大損失3.11%は極めて優秀。不動産投資で例えるなら「実質的な空室リスクがほぼゼロ」に相当する安定性です。</span>
+        </div>
+      </div>
+
+      <!-- 実口座スクリーンショット -->
+      <div class="screenshot-row">
+        <div class="screenshot-card fade-in">
+          <!--
+            vantage-main.png
+            Vantage Trading メイン画面（47.24% 3ヶ月リターン）
+          -->
+          <img
+            src="assets/images/vantage-main.png"
+            alt="Vantage Trading 実口座画面 3ヶ月リターン47.24%"
+            class="screenshot-img"
+            loading="lazy"
+          >
+          <p class="screenshot-caption">Vantage Trading 実口座画面</p>
+        </div>
+        <div class="screenshot-card fade-in">
+          <!--
+            vantage-stats.png
+            Vantage Trading 統計画面（勝率76.65%・総取引861）
+          -->
+          <img
+            src="assets/images/vantage-stats.png"
+            alt="Vantage Trading 取引統計 勝率76.65% 総取引861回"
+            class="screenshot-img"
+            loading="lazy"
+          >
+          <p class="screenshot-caption">取引統計・勝率データ</p>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        ※ 掲載している数値は過去および実運用上の結果であり、将来の利益を保証するものではありません。
+      </p>
+
+      <div class="cta-center">
+        <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="btn btn--primary">実運用の詳細をオープンチャットで確認する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       月次推移
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section monthly">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag">Monthly Record</div>
+        <h2 class="section__title">月次実績の推移</h2>
+        <p class="section__sub">証拠金150万円（約1万ドル）換算での月次実績一覧</p>
+      </div>
+
+      <div class="monthly-grid">
+        <div class="monthly-card fade-in">
+          <p class="monthly-card__label">通常口座（1倍）</p>
+          <!--
+            monthly-table-1x.png
+            月次実績一覧（通常口座）2025年1月〜2026年4月
+          -->
+          <img
+            src="assets/images/monthly-table-1x.png"
+            alt="月次実績一覧 通常口座 2025年1月〜2026年4月"
+            class="monthly-img"
+            loading="lazy"
+          >
+        </div>
+        <div class="monthly-card fade-in">
+          <p class="monthly-card__label">2倍口座</p>
+          <!--
+            monthly-table-2x.png
+            月次実績一覧（2倍口座）2025年1月〜2026年4月
+          -->
+          <img
+            src="assets/images/monthly-table-2x.png"
+            alt="月次実績一覧 2倍口座 2025年1月〜2026年4月"
+            class="monthly-img"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card fade-in">
+          <span class="summary-card__label">月平均利益</span>
+          <span class="summary-card__value">142,474<small>円</small></span>
+          <span class="summary-card__rate">9.50% / 月</span>
+        </div>
+        <div class="summary-card fade-in">
+          <span class="summary-card__label">最大DD</span>
+          <span class="summary-card__value summary-card__value--red">-60,942<small>円</small></span>
+          <span class="summary-card__rate">-4.06%</span>
+        </div>
+        <div class="summary-card fade-in">
+          <span class="summary-card__label">プロフィットファクター</span>
+          <span class="summary-card__value">2.97</span>
+        </div>
+        <div class="summary-card fade-in">
+          <span class="summary-card__label">勝率</span>
+          <span class="summary-card__value">79.14%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       運用推移グラフ
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section equity">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag">Equity Curve</div>
+        <h2 class="section__title">運用推移グラフ</h2>
+        <p class="section__sub">
+          実運用口座の残高推移。<br class="br-sp">
+          複数の設定で安定した右肩上がりを記録しています。
+        </p>
+      </div>
+
+      <div class="equity-grid equity-grid--5">
+        <div class="equity-card fade-in">
+          <!--
+            equity-report-1.png
+            MT5 運用推移グラフ（PF2.42 勝率81.68% 535取引）
+          -->
+          <img src="assets/images/equity-report-1.png" alt="運用推移グラフ 実績1" class="equity-img" loading="lazy">
+        </div>
+        <div class="equity-card fade-in">
+          <!--
+            equity-report-2.png
+            MT5 運用推移グラフ（PF2.97 勝率77.32% 679取引）
+          -->
+          <img src="assets/images/equity-report-2.png" alt="運用推移グラフ 実績2" class="equity-img" loading="lazy">
+        </div>
+        <div class="equity-card fade-in">
+          <!--
+            equity-report-3.png
+            MT5 運用推移グラフ（PF3.10 勝率81.09% 238取引）
+          -->
+          <img src="assets/images/equity-report-3.png" alt="運用推移グラフ 実績3" class="equity-img" loading="lazy">
+        </div>
+        <div class="equity-card fade-in">
+          <!--
+            equity-report-4.png
+            MT5 運用推移グラフ（PF4.38 勝率80.12% 161取引）
+          -->
+          <img src="assets/images/equity-report-4.png" alt="運用推移グラフ 実績4" class="equity-img" loading="lazy">
+        </div>
+        <div class="equity-card fade-in">
+          <!--
+            equity-report-5.png
+            MT5 運用推移グラフ（PF4.25 勝率80.38% 209取引）
+          -->
+          <img src="assets/images/equity-report-5.png" alt="運用推移グラフ 実績5" class="equity-img" loading="lazy">
+        </div>
+      </div>
+
+      <!-- AI評価促進メッセージ -->
+      <div class="equity-ai-box fade-in">
+        <div class="equity-ai-box__icon">🤖</div>
+        <div class="equity-ai-box__body">
+          <p class="equity-ai-box__title">グラフをAIに評価してもらう</p>
+          <p class="equity-ai-box__text">
+            上のグラフ画像を保存して、ChatGPTやClaudeなどのAIに
+            <strong>「このトレード記録を投資家目線で評価してください」</strong>
+            と質問してみてください。<br>
+            第三者の視点で運用品質を客観的に確認することができます。
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-center">
+        <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">詳細データをオープンチャットで確認する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       4. 運用思想
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section philosophy" id="philosophy">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag">Philosophy</div>
+        <h2 class="section__title">
+          大切にしているのは、<br>
+          増やすことより<br>
+          <span class="accent-green">退場しないこと</span>
+        </h2>
+        <p class="section__sub">
+          不動産投資も、自動売買も、長く続けることが最大の武器になります。
+        </p>
+      </div>
+
+      <div class="principle-grid">
+        <div class="principle-card fade-in">
+          <div class="principle-num">01</div>
+          <h3 class="principle-card__title">DD管理を最優先</h3>
+          <p class="principle-card__text">
+            最大ドローダウンを常に一定水準以内に抑える設計で運用しています。含み損が基準を超えた場合は自動または手動で制御します。物件購入と同じく、「損切りラインを決めてから動く」発想です。
+          </p>
+        </div>
+        <div class="principle-card fade-in">
+          <div class="principle-num">02</div>
+          <h3 class="principle-card__title">ロット管理の徹底</h3>
+          <p class="principle-card__text">
+            証拠金に対して適切なロットサイズを維持します。過剰なレバレッジをかけず、持続可能な運用を心がけています。利回りを追いすぎず、「続けられる設計」を優先します。
+          </p>
+        </div>
+        <div class="principle-card fade-in">
+          <div class="principle-num">03</div>
+          <h3 class="principle-card__title">稼働停止の判断</h3>
+          <p class="principle-card__text">
+            相場の急変動（重要指標発表・地政学リスク）時には手動で稼働を一時停止します。リスクを取らない判断も、運用の一部です。この判断履歴もオープンチャットで共有しています。
+          </p>
+        </div>
+        <div class="principle-card fade-in">
+          <div class="principle-num">04</div>
+          <h3 class="principle-card__title">積み上げ型の思考</h3>
+          <p class="principle-card__text">
+            月利20〜30%の夢より、月利5〜10%を安定して積み上げる現実を選んでいます。不動産の表面利回りに近い感覚で、焦らず長期的に積み上げることを目標にしています。
+          </p>
+        </div>
+      </div>
+
+      <div class="philosophy-quote fade-in">
+        <blockquote>
+          「勝ち続けるシステムより、<br>
+          負け続けないシステムを目指す。」
+        </blockquote>
+      </div>
+
+      <div class="cta-center">
+        <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="btn btn--primary">運用思想の詳細をオープンチャットで見る →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       5. なぜ不動産投資家向けか
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section for-re" id="for-re">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag">For Real Estate Investors</div>
+        <h2 class="section__title">
+          なぜ、不動産投資家に<br>
+          向いていると考えるのか
+        </h2>
+        <p class="section__sub">
+          この運用スタイルは、不動産投資家が持つ<br class="br-sp">
+          思考・資金感覚と特に相性が良いと感じています。
+        </p>
+      </div>
+
+      <div class="reason-list">
+        <div class="reason-item fade-in">
+          <div class="reason-item__num">01</div>
+          <div class="reason-item__body">
+            <h3>キャッシュフロー思考と相性が良い</h3>
+            <p>毎月の家賃収入を積み上げる感覚に近い、月次利益の積み上げ型運用です。「月ごとの収支」を重視する投資家にとって、直感的に評価しやすいスタイルです。単発の大きな利益より、継続的な小さな利益を重視する点が共通しています。</p>
+          </div>
+        </div>
+        <div class="reason-item fade-in">
+          <div class="reason-item__num">02</div>
+          <div class="reason-item__body">
+            <h3>利回り感覚が共通している</h3>
+            <p>表面利回り7〜10%を基準に物件を選ぶ感覚を持つ方なら、月次利益の数字も自然に評価できます。FXや自動売買に馴染みがなくても、投資家としての判断軸がそのまま活きます。</p>
+          </div>
+        </div>
+        <div class="reason-item fade-in">
+          <div class="reason-item__num">03</div>
+          <div class="reason-item__body">
+            <h3>待機資金の活用先になる</h3>
+            <p>融資待ちや次の物件準備中の「眠った資金」を、全力投入ではなく余剰資金の一部として活用できます。不動産購入のタイミングや与信に影響しない範囲での運用が前提です。</p>
+          </div>
+        </div>
+        <div class="reason-item fade-in">
+          <div class="reason-item__num">04</div>
+          <div class="reason-item__body">
+            <h3>分散投資としての機能</h3>
+            <p>不動産（実物資産）× ゴールド自動売買（金融資産）。相関性の低い資産を組み合わせることで、ポートフォリオ全体のリスク分散になります。特定の資産クラスへの集中リスクを自然に緩和できます。</p>
+          </div>
+        </div>
+        <div class="reason-item fade-in">
+          <div class="reason-item__num">05</div>
+          <div class="reason-item__body">
+            <h3>全資金投入を前提としない</h3>
+            <p>「余剰資金の一部」という位置づけが明確です。不動産購入資金や生活防衛費には一切手をつけない、という大原則のもとで運用情報を共有しています。コミュニティ内でもこの原則を常に共有しています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       6. オープンチャット導線
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="section openchat" id="openchat">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <div class="section__tag section__tag--light">Community</div>
+        <h2 class="section__title section__title--light">
+          実運用はオープンチャットで<br>
+          公開しています
+        </h2>
+        <p class="section__sub section__sub--light">
+          販売・勧誘が目的ではありません。<br>
+          不動産投資家向けの余剰資金運用について、<br>
+          実運用をリアルタイムで共有するコミュニティです。
+        </p>
+      </div>
+
+      <!-- 共有コンテンツ カード -->
+      <div class="share-grid">
+        <div class="share-card fade-in">
+          <div class="share-card__icon">📅</div>
+          <h4 class="share-card__title">日次損益公開</h4>
+          <p class="share-card__text">毎日の損益をリアルタイムで共有。プラスもマイナスも隠さず公開します。</p>
+        </div>
+        <div class="share-card fade-in">
+          <div class="share-card__icon">📱</div>
+          <h4 class="share-card__title">リアル運用状況</h4>
+          <p class="share-card__text">実際の口座画面をスクリーンショットで共有。数字だけでなく、実際の動きをご覧いただけます。</p>
+        </div>
+        <div class="share-card fade-in">
+          <div class="share-card__icon">⏸</div>
+          <h4 class="share-card__title">稼働停止情報</h4>
+          <p class="share-card__text">急変動時の稼働停止・再開情報をいち早く共有。リスク管理の判断プロセスを透明公開します。</p>
+        </div>
+        <div class="share-card fade-in">
+          <div class="share-card__icon">🥇</div>
+          <h4 class="share-card__title">ゴールド相場コメント</h4>
+          <p class="share-card__text">ゴールド相場の状況や注目ポイントを定期的にコメントで共有します。</p>
+        </div>
+        <div class="share-card fade-in">
+          <div class="share-card__icon">📊</div>
+          <h4 class="share-card__title">月次実績まとめ</h4>
+          <p class="share-card__text">月末に損益・DD・取引数を整理してレポート。透明性ある記録を継続的に蓄積しています。</p>
+        </div>
+        <div class="share-card fade-in">
+          <div class="share-card__icon">💭</div>
+          <h4 class="share-card__title">運用の考え方</h4>
+          <p class="share-card__text">ロット管理・リスク管理・停止判断の考え方など、運用思想もオープンに共有しています。</p>
+        </div>
+      </div>
+
+      <!-- 参加ボックス -->
+      <div class="join-box fade-in">
+        <div class="join-box__badge">現在、実運用メンバー向けに限定公開中</div>
+        <h3 class="join-box__title">参加を希望される方へ</h3>
+        <p class="join-box__text">
+          LINEオープンチャットは無料でご参加いただけます。<br>
+          販売・勧誘・商品購入は一切ありません。<br>
+          純粋に実運用の情報を共有するコミュニティです。
+        </p>
+        <a href="https://line.me/ti/g2/1MfxBZ1cwigxN_VktneQ_o64oel1VAlq0KkhdQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" target="_blank" rel="noopener noreferrer" class="btn btn--gold btn--xl">オープンチャットに参加する →</a>
+        <p class="join-box__note">※ 現在、実運用メンバー向けに限定公開中</p>
+        <div class="join-box__ea-note">
+          <p>※ オープンチャット参加後にEAをご利用される場合は、月額固定の<strong>無料版</strong>と<strong>有料版</strong>がございます。</p>
+          <p>※ ご利用の際は別途お問い合わせが必要となります。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       7. リスク説明
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <section class="risk">
+    <div class="container">
+      <h2 class="risk__title">リスクについて</h2>
+      <ul class="risk__list">
+        <li>FX・CFD・ゴールド取引は元本割れリスクがあります</li>
+        <li>過去の実績は将来の利益を保証するものではありません</li>
+        <li>スプレッド拡大・約定遅延・スリッページにより、期待通りの結果にならない場合があります</li>
+        <li>相場の急変動（経済指標発表・地政学リスク等）により、想定外の損失が発生する可能性があります</li>
+        <li>取引はすべて自己責任にて行ってください</li>
+        <li>投資は余剰資金の範囲内で行うことを強く推奨します</li>
+        <li>当オープンチャットは投資助言・投資顧問を目的としたものではありません</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━
+       8. 運営者情報・フッター
+  ━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__logo">◆ Gold Auto Trading</p>
+      <p class="footer__copy">&copy; 2026 Gold Auto Trading. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
